@@ -1,61 +1,113 @@
 <?php
 header('Content-Type: application/json');
+header('Access-Control-Allow-Origin: *');
 
-$data = [
-    "users" => [
-        [
-            "id" => 1,
-            "name" => "Иван Петров",
-            "username" => "ivan_92",
-            "email" => "ivan92@example.com",
-            "age" => 31,
-            "isActive" => true,
-            "roles" => ["user", "tester"],
-            "address" => [
-                "city" => "Киев",
-                "street" => "ул. Шевченко",
-                "house" => 12
-            ],
-            "createdAt" => "2026-05-03T10:15:30Z"
-        ],
-        [
-            "id" => 2,
-            "name" => "Анна Смирнова",
-            "username" => "anna_dev",
-            "email" => "anna.dev@example.com",
-            "age" => 25,
-            "isActive" => false,
-            "roles" => ["admin"],
-            "address" => [
-                "city" => "Львов",
-                "street" => "пр. Свободы",
-                "house" => 7
-            ],
-            "createdAt" => "2026-04-28T08:22:10Z"
-        ]
+$themes = [
+    [
+        'id' => 'purple',
+        'name' => 'Purple Dream',
+        'background' => 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+        'container' => '#ffffff',
+        'primary' => '#667eea',
+        'primaryHover' => '#5568d3',
+        'delete' => '#e74c3c',
+        'deleteHover' => '#c0392b',
+        'text' => '#333333',
+        'itemBg' => '#f9f9f9',
+        'itemHover' => '#f0f0f0'
     ],
-    "products" => [
-        [
-            "id" => 101,
-            "name" => "Игровая мышь",
-            "price" => 1299.99,
-            "inStock" => true,
-            "tags" => ["gaming", "pc", "rgb"]
-        ],
-        [
-            "id" => 102,
-            "name" => "Механическая клавиатура",
-            "price" => 3499.50,
-            "inStock" => false,
-            "tags" => ["keyboard", "gaming"]
-        ]
+    [
+        'id' => 'ocean',
+        'name' => 'Ocean Blue',
+        'background' => 'linear-gradient(135deg, #0093E9 0%, #80D0C7 100%)',
+        'container' => '#ffffff',
+        'primary' => '#0093E9',
+        'primaryHover' => '#0077c2',
+        'delete' => '#e74c3c',
+        'deleteHover' => '#c0392b',
+        'text' => '#333333',
+        'itemBg' => '#f0f9ff',
+        'itemHover' => '#e0f2fe'
     ],
-    "settings" => [
-        "theme" => "dark",
-        "language" => "ru",
-        "notifications" => true
+    [
+        'id' => 'sunset',
+        'name' => 'Sunset',
+        'background' => 'linear-gradient(135deg, #FA8BFF 0%, #2BD2FF 52%, #2BFF88 90%)',
+        'container' => '#ffffff',
+        'primary' => '#FA8BFF',
+        'primaryHover' => '#e070e8',
+        'delete' => '#ff6b6b',
+        'deleteHover' => '#ee5a52',
+        'text' => '#333333',
+        'itemBg' => '#fff5f7',
+        'itemHover' => '#ffe4e9'
     ],
-    "serverTime" => date("c") // текущее время сервера
+    [
+        'id' => 'forest',
+        'name' => 'Forest Green',
+        'background' => 'linear-gradient(135deg, #0F2027 0%, #203A43 50%, #2C5364 100%)',
+        'container' => '#ffffff',
+        'primary' => '#2C5364',
+        'primaryHover' => '#203A43',
+        'delete' => '#e74c3c',
+        'deleteHover' => '#c0392b',
+        'text' => '#333333',
+        'itemBg' => '#f0f4f5',
+        'itemHover' => '#e1e8ea'
+    ],
+    [
+        'id' => 'dark',
+        'name' => 'Dark Mode',
+        'background' => 'linear-gradient(135deg, #1a1a2e 0%, #16213e 100%)',
+        'container' => '#0f3460',
+        'primary' => '#e94560',
+        'primaryHover' => '#d63651',
+        'delete' => '#ff6b6b',
+        'deleteHover' => '#ee5a52',
+        'text' => '#ffffff',
+        'itemBg' => '#1a1a2e',
+        'itemHover' => '#16213e'
+    ],
+    [
+        'id' => 'candy',
+        'name' => 'Candy Pop',
+        'background' => 'linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%)',
+        'container' => '#ffffff',
+        'primary' => '#ff6b9d',
+        'primaryHover' => '#ff5689',
+        'delete' => '#c44569',
+        'deleteHover' => '#a83655',
+        'text' => '#333333',
+        'itemBg' => '#fff5f0',
+        'itemHover' => '#ffe8dd'
+    ],
+    [
+        'id' => 'neon',
+        'name' => 'Neon Nights',
+        'background' => 'linear-gradient(135deg, #12c2e9 0%, #c471ed 50%, #f64f59 100%)',
+        'container' => '#1a1a1a',
+        'primary' => '#12c2e9',
+        'primaryHover' => '#0ea5c7',
+        'delete' => '#f64f59',
+        'deleteHover' => '#e03e47',
+        'text' => '#ffffff',
+        'itemBg' => '#2a2a2a',
+        'itemHover' => '#3a3a3a'
+    ],
+    [
+        'id' => 'minimal',
+        'name' => 'Minimal White',
+        'background' => '#f5f5f5',
+        'container' => '#ffffff',
+        'primary' => '#000000',
+        'primaryHover' => '#333333',
+        'delete' => '#666666',
+        'deleteHover' => '#444444',
+        'text' => '#000000',
+        'itemBg' => '#fafafa',
+        'itemHover' => '#f0f0f0'
+    ]
 ];
 
-echo json_encode($data, JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT);
+echo json_encode($themes, JSON_PRETTY_PRINT);
+?>
