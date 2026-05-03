@@ -1,7 +1,7 @@
 [
     {
         "id": "midnight",
-        "name": "Midnight Purple",
+        "name": "Полночь",
         "background": "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
         "container": "#ffffff",
         "primary": "#7c3aed",
@@ -14,7 +14,7 @@
     },
     {
         "id": "cyber",
-        "name": "Cyberpunk",
+        "name": "Киберпанк",
         "background": "linear-gradient(135deg, #8b5cf6 0%, #ec4899 50%, #eab308 100%)",
         "container": "#18181b",
         "primary": "#a855f7",
@@ -27,7 +27,7 @@
     },
     {
        "id": "forest",
-        "name": "Forest Green",
+        "name": "Лес",
         "background": "linear-gradient(135deg, #134e5e 0%, #71b280 100%)",
         "container": "#ffffff",
         "primary": "#16a34a",
@@ -40,7 +40,7 @@
     },
     {
         "id": "ocean",
-        "name": "Ocean Breeze",
+        "name": "Брызги океана",
         "background": "linear-gradient(135deg, #2193b0 0%, #6dd5ed 100%)",
         "container": "#ffffff",
         "primary": "#0284c7",
@@ -53,7 +53,7 @@
     },
     {
         "id": "aurora",
-        "name": "✨ Aurora",
+        "name": "Аврора",
         "background": "linear-gradient(135deg, #06b6d4 0%, #8b5cf6 50%, #ec4899 100%)",
         "backgroundImage": "https://images.unsplash.com/photo-1531366936337-7c912a4589a7?w=1920&q=80",
         "container": "rgba(255, 255, 255, 0.95)",
