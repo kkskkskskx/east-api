@@ -50,4 +50,19 @@
         "text": "#0f172a",
         "itemBg": "#f1f5f9",
         "itemHover": "#e2e8f0"
+    },
+    {
+        "id": "aurora",
+        "name": "✨ Aurora",
+        "background": "linear-gradient(135deg, #06b6d4 0%, #8b5cf6 50%, #ec4899 100%)",
+        "backgroundImage": "https://images.unsplash.com/photo-1531366936337-7c912a4589a7?w=1920&q=80",
+        "container": "rgba(255, 255, 255, 0.95)",
+        "primary": "#8b5cf6",
+        "primaryHover": "#7c3aed",
+        "delete": "#f43f5e",
+        "deleteHover": "#e11d48",
+        "text": "#1f2937",
+        "itemBg": "#faf5ff",
+        "itemHover": "#f3e8ff"
+    },
 ]
