@@ -1,7 +1,7 @@
 [
     {
         "id": "midnight",
-        "name": "\ud83c\udf19 Midnight Purple",
+        "name": "Midnight Purple", \ud83c\udf19
         "background": "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
         "container": "#ffffff",
         "primary": "#7c3aed",
@@ -14,7 +14,7 @@
     },
     {
         "id": "cyber",
-        "name": "\u26a1 Cyberpunk",
+        "name": "Cyberpunk", \u26a1
         "background": "linear-gradient(135deg, #8b5cf6 0%, #ec4899 50%, #eab308 100%)",
         "container": "#18181b",
         "primary": "#a855f7",
