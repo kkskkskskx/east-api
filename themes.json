@@ -24,5 +24,30 @@
         "text": "#fafafa",
         "itemBg": "#27272a",
         "itemHover": "#3f3f46"
-    }
+    },
+    {
+       "id": "forest",
+        "name": "Forest Green",
+        "background": "linear-gradient(135deg, #134e5e 0%, #71b280 100%)",
+        "container": "#ffffff",
+        "primary": "#16a34a",
+        "primaryHover": "#15803d",
+        "delete": "#ef4444",
+        "deleteHover": "#dc2626",
+        "text": "#052e16",
+        "itemBg": "#f0fdf4",
+        "itemHover": "#dcfce7"
+    },
+    {
+        "id": "ocean",
+        "name": "Ocean Breeze",
+        "background": "linear-gradient(135deg, #2193b0 0%, #6dd5ed 100%)",
+        "container": "#ffffff",
+        "primary": "#0284c7",
+        "primaryHover": "#0369a1",
+        "delete": "#ef4444",
+        "deleteHover": "#dc2626",
+        "text": "#0f172a",
+        "itemBg": "#f1f5f9",
+        "itemHover": "#e2e8f0"
 ]
