@@ -16,7 +16,7 @@
     {
         "id": "cyber",
         "name": "⚡ Киберпанк",
-        "background": "linear-gradient(135deg, #8b5cf6 0%, #ec4899 50%, #eab308 100%)",
+        "background": "#ffffff",
         "backgroundImage": "https://static.cdprojektred.com/cms.cdprojektred.com/16x9_big/872822c5e50dc71f345416098d29fc3ae5cd26c1-1280x720.jpg",
         "container": "rgba(24, 24, 27, 0.95)",
         "primary": "#a855f7",
@@ -30,7 +30,7 @@
     {
         "id": "forest",
         "name": "🌲 Лес",
-        "background": "linear-gradient(135deg, #134e5e 0%, #71b280 100%)",
+        "background": "#ffffff",
         "backgroundImage": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=1920&q=80",
         "container": "rgba(255, 255, 255, 0.95)",
         "primary": "#16a34a",
@@ -44,7 +44,7 @@
     {
         "id": "ocean",
         "name": "🌊 Океан",
-        "background": "linear-gradient(135deg, #2193b0 0%, #6dd5ed 100%)",
+        "background": "#ffffff",
         "backgroundImage": "https://images.unsplash.com/photo-1505142468610-359e7d316be0?w=1920&q=80",
         "container": "rgba(255, 255, 255, 0.95)",
         "primary": "#0284c7",
@@ -58,7 +58,7 @@
     {
         "id": "aurora",
         "name": "✨ Аврора",
-        "background": "linear-gradient(135deg, #06b6d4 0%, #8b5cf6 50%, #ec4899 100%)",
+        "background": "#ffffff",
         "backgroundImage": "https://images.unsplash.com/photo-1531366936337-7c912a4589a7?w=1920&q=80",
         "container": "rgba(255, 255, 255, 0.95)",
         "primary": "#8b5cf6",
@@ -72,7 +72,7 @@
     {
         "id": "sunset",
         "name": "🌅 Закат",
-        "background": "linear-gradient(135deg, #ff6b6b 0%, #feca57 100%)",
+        "background": "#ffffff",
         "backgroundImage": "https://images.unsplash.com/photo-1495567720989-cebdbdd97913?w=1920&q=80",
         "container": "rgba(255, 255, 255, 0.95)",
         "primary": "#f97316",
@@ -100,7 +100,7 @@
     {
         "id": "sakura",
         "name": "🌸 Сакура",
-        "background": "linear-gradient(135deg, #fda4af 0%, #fb7185 100%)",
+        "background": "#ffffff",
         "backgroundImage": "https://images.unsplash.com/photo-1522383225653-ed111181a951?w=1920&q=80",
         "container": "rgba(255, 255, 255, 0.95)",
         "primary": "#f43f5e",
@@ -142,7 +142,7 @@
     {
         "id": "coffee",
         "name": "☕ Кофе",
-        "background": "linear-gradient(135deg, #78350f 0%, #92400e 100%)",
+        "background": "#ffffff",
         "backgroundImage": "https://images.unsplash.com/photo-1447933601403-0c6688de566e?w=1920&q=80",
         "container": "rgba(254, 243, 199, 0.95)",
         "primary": "#92400e",
