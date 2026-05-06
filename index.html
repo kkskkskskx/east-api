@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collaborative Code Editor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🚀 Collaborative Code Editor</h1>
+            <div class="user-controls">
+                <input type="text" id="username" placeholder="Your name..." maxlength="20">
+                <div class="online-users">
+                    <span class="users-label">Online:</span>
+                    <div id="usersList"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <div class="sidebar">
+                <div class="files-header">
+                    <h3>Files</h3>
+                    <button id="addFileBtn" title="Add new file">+</button>
+                </div>
+                <div id="filesList"></div>
+                <div class="upload-section">
+                    <label for="imageUpload" class="upload-btn">
+                        📁 Upload Image
+                    </label>
+                    <input type="file" id="imageUpload" accept="image/*" style="display: none;">
+                    <div id="imagesList"></div>
+                </div>
+            </div>
+
+            <div class="editor-section">
+                <div class="editor-header">
+                    <span id="currentFileName">index.html</span>
+                    <button id="deleteFileBtn" title="Delete file">🗑️</button>
+                </div>
+                <textarea id="codeEditor" spellcheck="false"></textarea>
+            </div>
+
+            <div class="preview-section">
+                <div class="preview-header">
+                    <span>Live Preview</span>
+                    <div>
+                        <button id="openFullBtn" title="Open in new window">🔗</button>
+                        <button id="refreshBtn" title="Refresh preview">🔄</button>
+                    </div>
+                </div>
+                <iframe id="preview"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

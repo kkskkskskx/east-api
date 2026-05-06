@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Preview</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        #previewFrame {
+            width: 100%;
+            height: 100vh;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <iframe id="previewFrame"></iframe>
+
+    <script>
+        function updatePreview() {
+            const saved = localStorage.getItem('collaborativeEditor');
+            if (!saved) {
+                setTimeout(updatePreview, 500);
+                return;
+            }
+
+            const data = JSON.parse(saved);
+            const htmlContent = data.files['index.html']?.content || '';
+            const cssContent = data.files['style.css']?.content || '';
+            const jsContent = data.files['script.js']?.content || '';
+            const images = data.images || {};
+
+            let fullHTML = htmlContent;
+
+            if (!fullHTML.includes('charset')) {
+                fullHTML = fullHTML.replace('<head>', '<head>\n    <meta charset="UTF-8">');
+            }
+
+            if (!fullHTML.includes('<style>') && cssContent) {
+                fullHTML = fullHTML.replace('</head>', `<style>${cssContent}</style></head>`);
+            }
+
+            if (!fullHTML.includes('<script>') && jsContent) {
+                fullHTML = fullHTML.replace('</body>', `<script>${jsContent}</script></body>`);
+            }
+
+            Object.keys(images).forEach(imageName => {
+                const regex = new RegExp(`src=["']${imageName}["']`, 'g');
+                fullHTML = fullHTML.replace(regex, `src="${images[imageName]}"`);
+            });
+
+            const iframe = document.getElementById('previewFrame');
+            const blob = new Blob([fullHTML], { type: 'text/html; charset=utf-8' });
+            iframe.src = URL.createObjectURL(blob);
+        }
+
+        // Обновляем каждые 500мс
+        setInterval(updatePreview, 500);
+        updatePreview();
+    </script>
+</body>
+</html>
