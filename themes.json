@@ -17,7 +17,7 @@
         "id": "cyber",
         "name": "⚡ Киберпанк",
         "background": "linear-gradient(135deg, #8b5cf6 0%, #ec4899 50%, #eab308 100%)",
-        "backgroundImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgYD050Wf8d76jMNiqGAlNBY31Z3fnmQBP1Q&s",
+        "backgroundImage": "https://static.cdprojektred.com/cms.cdprojektred.com/16x9_big/872822c5e50dc71f345416098d29fc3ae5cd26c1-1280x720.jpg",
         "container": "rgba(24, 24, 27, 0.95)",
         "primary": "#a855f7",
         "primaryHover": "#9333ea",
