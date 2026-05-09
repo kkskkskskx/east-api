@@ -1,0 +1,295 @@
+{
+  "languages": [
+    {
+      "id": "uk",
+      "name": "Українська",
+      "flag": "🇺🇦",
+      "translations": {
+        "appTitle": "Список завдань",
+        "stats": {
+          "total": "Всього",
+          "active": "Активних",
+          "completed": "Завершено"
+        },
+        "input": {
+          "placeholder": "Додати нове завдання...",
+          "addButton": "Додати"
+        },
+        "task": {
+          "deleteButton": "Видалити"
+        },
+        "emptyState": {
+          "message": "Немає завдань. Додайте перше!"
+        },
+        "buttons": {
+          "achievements": "Нагороди",
+          "theme": "Тема",
+          "language": "Мова"
+        },
+        "achievements": {
+          "title": "Нагороди",
+          "close": "×",
+          "stats": {
+            "completed": "Виконано",
+            "created": "Створено",
+            "streak": "Серія днів"
+          },
+          "list": [
+            {
+              "id": "first_task",
+              "title": "Перший крок",
+              "description": "Створіть перше завдання"
+            },
+            {
+              "id": "task_master",
+              "title": "Майстер завдань",
+              "description": "Створіть 10 завдань"
+            },
+            {
+              "id": "task_legend",
+              "title": "Легенда завдань",
+              "description": "Створіть 50 завдань"
+            },
+            {
+              "id": "first_complete",
+              "title": "Початок шляху",
+              "description": "Виконайте перше завдання"
+            },
+            {
+              "id": "productive",
+              "title": "Продуктивний",
+              "description": "Виконайте 10 завдань"
+            },
+            {
+              "id": "super_productive",
+              "title": "Супер продуктивний",
+              "description": "Виконайте 25 завдань"
+            },
+            {
+              "id": "unstoppable",
+              "title": "Невпинний",
+              "description": "Виконайте 50 завдань"
+            },
+            {
+              "id": "centurion",
+              "title": "Центуріон",
+              "description": "Виконайте 100 завдань"
+            },
+            {
+              "id": "streak_3",
+              "title": "На розігріві",
+              "description": "Працюйте 3 дні поспіль"
+            },
+            {
+              "id": "streak_7",
+              "title": "Тиждень сили",
+              "description": "Працюйте 7 днів поспіль"
+            },
+            {
+              "id": "streak_30",
+              "title": "Місяць тріумфу",
+              "description": "Працюйте 30 днів поспіль"
+            }
+          ],
+          "notification": {
+            "title": "🏆 Нагорода отримана!"
+          }
+        }
+      }
+    },
+    {
+      "id": "ru",
+      "name": "Русский",
+      "flag": "🇷🇺",
+      "translations": {
+        "appTitle": "Список задач",
+        "stats": {
+          "total": "Всего",
+          "active": "Активных",
+          "completed": "Завершено"
+        },
+        "input": {
+          "placeholder": "Добавить новую задачу...",
+          "addButton": "Добавить"
+        },
+        "task": {
+          "deleteButton": "Удалить"
+        },
+        "emptyState": {
+          "message": "Нет задач. Добавьте первую!"
+        },
+        "buttons": {
+          "achievements": "Награды",
+          "theme": "Тема",
+          "language": "Язык"
+        },
+        "achievements": {
+          "title": "Награды",
+          "close": "×",
+          "stats": {
+            "completed": "Выполнено",
+            "created": "Создано",
+            "streak": "Серия дней"
+          },
+          "list": [
+            {
+              "id": "first_task",
+              "title": "Первый шаг",
+              "description": "Создайте первую задачу"
+            },
+            {
+              "id": "task_master",
+              "title": "Мастер задач",
+              "description": "Создайте 10 задач"
+            },
+            {
+              "id": "task_legend",
+              "title": "Легенда задач",
+              "description": "Создайте 50 задач"
+            },
+            {
+              "id": "first_complete",
+              "title": "Начало пути",
+              "description": "Выполните первую задачу"
+            },
+            {
+              "id": "productive",
+              "title": "Продуктивный",
+              "description": "Выполните 10 задач"
+            },
+            {
+              "id": "super_productive",
+              "title": "Супер продуктивный",
+              "description": "Выполните 25 задач"
+            },
+            {
+              "id": "unstoppable",
+              "title": "Неудержимый",
+              "description": "Выполните 50 задач"
+            },
+            {
+              "id": "centurion",
+              "title": "Центурион",
+              "description": "Выполните 100 задач"
+            },
+            {
+              "id": "streak_3",
+              "title": "На разогреве",
+              "description": "Работайте 3 дня подряд"
+            },
+            {
+              "id": "streak_7",
+              "title": "Неделя силы",
+              "description": "Работайте 7 дней подряд"
+            },
+            {
+              "id": "streak_30",
+              "title": "Месяц триумфа",
+              "description": "Работайте 30 дней подряд"
+            }
+          ],
+          "notification": {
+            "title": "🏆 Награда получена!"
+          }
+        }
+      }
+    },
+    {
+      "id": "en",
+      "name": "English",
+      "flag": "🇬🇧",
+      "translations": {
+        "appTitle": "Todo List",
+        "stats": {
+          "total": "Total",
+          "active": "Active",
+          "completed": "Completed"
+        },
+        "input": {
+          "placeholder": "Add new task...",
+          "addButton": "Add"
+        },
+        "task": {
+          "deleteButton": "Delete"
+        },
+        "emptyState": {
+          "message": "No tasks. Add your first one!"
+        },
+        "buttons": {
+          "achievements": "Achievements",
+          "theme": "Theme",
+          "language": "Language"
+        },
+        "achievements": {
+          "title": "Achievements",
+          "close": "×",
+          "stats": {
+            "completed": "Completed",
+            "created": "Created",
+            "streak": "Day Streak"
+          },
+          "list": [
+            {
+              "id": "first_task",
+              "title": "First Step",
+              "description": "Create your first task"
+            },
+            {
+              "id": "task_master",
+              "title": "Task Master",
+              "description": "Create 10 tasks"
+            },
+            {
+              "id": "task_legend",
+              "title": "Task Legend",
+              "description": "Create 50 tasks"
+            },
+            {
+              "id": "first_complete",
+              "title": "Beginning of Journey",
+              "description": "Complete your first task"
+            },
+            {
+              "id": "productive",
+              "title": "Productive",
+              "description": "Complete 10 tasks"
+            },
+            {
+              "id": "super_productive",
+              "title": "Super Productive",
+              "description": "Complete 25 tasks"
+            },
+            {
+              "id": "unstoppable",
+              "title": "Unstoppable",
+              "description": "Complete 50 tasks"
+            },
+            {
+              "id": "centurion",
+              "title": "Centurion",
+              "description": "Complete 100 tasks"
+            },
+            {
+              "id": "streak_3",
+              "title": "Warming Up",
+              "description": "Work for 3 days in a row"
+            },
+            {
+              "id": "streak_7",
+              "title": "Week of Power",
+              "description": "Work for 7 days in a row"
+            },
+            {
+              "id": "streak_30",
+              "title": "Month of Triumph",
+              "description": "Work for 30 days in a row"
+            }
+          ],
+          "notification": {
+            "title": "🏆 Achievement Unlocked!"
+          }
+        }
+      }
+    }
+  ]
+}
