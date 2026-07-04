@@ -395,6 +395,7 @@ function add() {
     todos.push({ text, done: false });
     input.value = '';
     achievements.totalCreated++;
+    gtag('event', 'added todo');
     updateStreak();
     saveAchievements();
     checkNewAchievements();
